@@ -10,6 +10,7 @@ function BasicCard(front, back) {
 */
 
 function ClozeCard(text, cloze) {
+  if(this instanceof ClozeCard) {
   //put the first value as the whole question
   this.text = text;
   //second value as the answer
@@ -27,25 +28,28 @@ function ClozeCard(text, cloze) {
   this.fullText = function() {
     console.log(text);
   };
+} else {
+  return new ClozeCard(text,cloze);
+}
 };
 
 //Here is the made constructors with their questions and answers parts.
-var firstPresidentCloze = new ClozeCard( 
+var firstPresidentCloze = ClozeCard( 
   "George Washington was the first president of the United States.", "George Washington");
 
-var questionOne = new ClozeCard(
+var questionOne = ClozeCard(
   "Steve Jobs invented the internet", "Steve Jobs");
 
-var questionTwo = new ClozeCard(
+var questionTwo = ClozeCard(
   "Bill Gates invented the computer", "Bill Gates");
 
-var questionThree = new ClozeCard(
+var questionThree = ClozeCard(
   "Obama destroyed the internet.", "Obama");
 
-var questionFour = new ClozeCard(
+var questionFour = ClozeCard(
   "This Coding Boot Camp is fun and hard at the same time", "Coding Boot Camp")
 
-var questionFive = new ClozeCard(
+var questionFive = ClozeCard(
   "Randy is the best teacher I've ever had", "Randy");
 
 //here is where we have the partial question show in the console.
