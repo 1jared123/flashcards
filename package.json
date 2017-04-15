@@ -1,0 +1,24 @@
+{
+  "name": "flashcards",
+  "version": "1.0.0",
+  "description": "study aid",
+  "main": "cards.js",
+  "dependencies": {
+    "inquirer": "^3.0.6",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1jared123/flashcards.git"
+  },
+  "author": "Jared Moscrip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1jared123/flashcards/issues"
+  },
+  "homepage": "https://github.com/1jared123/flashcards#readme"
+}
